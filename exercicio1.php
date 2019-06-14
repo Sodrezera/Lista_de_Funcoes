@@ -1,12 +1,14 @@
 <?php
-    função  graus ( $ temp ) {
-        $ Celsius  = ( $ temperatura  -  32 ) * ( 5 / 9 );
-        $ msg  =  " a temperatura $ temp "  .  " º "  .  " está em fahrenheit, convertendo para celsius, é igual a: $ celsius "  .  " º celsius \ n " ;
-        return  $ msg ;
+    
+    function graus ($temp){
+        $celsius = ($temp - 32 ) * (5/9);
+        
+        $msg = "A temperatura $tempº em fahrenheit, convertendo para celsius, é igual a: $celsius" . "º celsius\n";
+        return $msg;
     }
     
-    echo  " Digite a temperatura em fahrenheit: \ n " ;
-    $ temp  = ( int ) fgets ( STDIN );
+    echo "Digite a temperatura em fahrenheit: \n";
+    $temp = (int) fgets (STDIN);
     
-    $ status  = graus ( $ temp );
-    echo  $ status ;
+    $status = graus ($temp);
+    echo $status;
